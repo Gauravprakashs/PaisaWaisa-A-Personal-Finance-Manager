@@ -44,6 +44,7 @@
                         <a class="collapse-item {{ request()->is('admin/expenses') || request()->is('admin/expenses/*') ? 'active' : '' }}" href="{{ route('admin.expenses.index') }}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Expense') }}</a>
                         <a class="collapse-item {{ request()->is('admin/incomes') || request()->is('admin/incomes/*') ? 'active' : '' }}" href="{{ route('admin.incomes.index') }}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Income') }}</a>
                         <a class="collapse-item {{ request()->is('admin/monthly_reports') || request()->is('admin/monthly_reports/*') ? 'active' : '' }}" href="{{ route('admin.monthly_reports.index') }}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Montly Reports') }}</a>
+                        <a class="collapse-item {{ request()->is('admin/monthly_reports') || request()->is('admin/graphs/*') ? 'active' : '' }}" href="{{ route('admin.graphs.index') }}"> <i class="fa fa-briefcase mr-2"></i> {{ __('See GRAPHS') }}</a>
                         @can('currency_access')
                             <a class="collapse-item {{ request()->is('admin/currencies') || request()->is('admin/currencies/*') ? 'active' : '' }}" href="{{ route('admin.currencies.index') }}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Currency') }}</a>
                         @endcan

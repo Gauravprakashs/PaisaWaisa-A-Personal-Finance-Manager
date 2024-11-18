@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('admin/graphs', [\App\Http\Controllers\Admin\GraphController::class, 'index'])->name('admin.graphs.index');
+});
+
+
 
 Route::get('/', function () {
     return redirect()->route('register');
