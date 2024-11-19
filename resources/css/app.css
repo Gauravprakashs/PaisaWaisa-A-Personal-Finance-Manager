@@ -1,0 +1,82 @@
+/* resources/css/app.css */
+body {
+    background-color:rgb(240, 91, 32); /* Light gray background */
+}
+.sidebar {
+    background-color: #ff7f50; /* Warm Orange Background for Sidebar */
+    color: white; /* White text */
+    border-right: 2px solid #f0e68c; /* Light yellow border */
+}
+
+/* Sidebar Brand */
+.sidebar-brand {
+    background-color: #ff6347; /* Warm Red for the brand section */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Sidebar Item Hover Effect */
+.nav-item {
+    transition: background-color 0.3s ease;
+}
+
+/* Active State for Nav Items */
+.nav-item.active {
+    background-color: #ffcc00; /* Warm Yellow for active state */
+    color: #ffffff;
+}
+
+/* Hover Effect for Nav Items */
+.nav-item:hover {
+    background-color: #ff7f50; /* Warm Orange for hover */
+    color: white;
+}
+
+/* Nav Link Styling */
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+    padding: 0.75rem 1.25rem;
+}
+
+/* Sidebar Collapse Inner Section */
+.collapse-inner {
+    background-color: #f0e68c; /* Light Yellow for collapse sections */
+}
+
+/* Collapse Item Styling */
+.collapse-item {
+    font-weight: bold;
+    color: #ff6347; /* Warm Red for collapse items */
+}
+
+/* Hover and Active Effects for Collapse Items */
+.collapse-item:hover {
+    background-color: #ff7f50; /* Hover Effect - Warm Orange */
+    color: white;
+}
+
+.collapse-item.active {
+    background-color: #ffcc00; /* Active - Warm Yellow */
+}
+
+/* Sidebar Divider */
+.sidebar-divider {
+    border-top: 1px solid #ff7f50; /* Warm Orange Divider */
+}
+
+/* Accordion Sidebar */
+#accordionSidebar {
+    padding: 0;
+}
+
+/* Additional styling for collapsible sidebar */
+.sidebar .collapse-inner .collapse-item {
+    color: #ff6347; /* Warm Red */
+}
+
+/* Adjust the toggle button */
+.navbar-toggler-icon {
+    background-color: #ff6347; /* Warm Red for the toggle icon */
+}
